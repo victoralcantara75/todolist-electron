@@ -1,0 +1,17 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "description": "To do app",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron . "
+  },
+  "author": {
+    "email": "victorjnio75@gmail.com",
+    "name": "Victor Alcantara"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^24.2.0"
+  }
+}

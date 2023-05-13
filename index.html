@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <link rel="stylesheet" href="style.css">
+    <title>My To Do tasks</title>
+  </head>
+  <body onload="loadTasks()">
+    <script type="application/javascript" src="script.js"></script>
+
+
+    <div class="flex-container" style="margin-top: 10px;">
+        <div class="menu" onclick="menuClicked('todo')">
+        <p class="menu-clicked" id="todo">To Do</p>
+        </div>
+        <div class="menu" onclick="menuClicked('completed')">
+            <p class="menu-option" id="completed">Completed</p>
+        </div>
+    </div>
+
+    <div class="add-task">
+        <button class="btn-add" onclick="openModal('createModal')">Add new Task</button>
+    </div>
+
+    <div class="task-container">
+
+    </div>
+    
+    <div id="createModal" class="modal">
+
+        <div class="modal-content">
+            <span id="close" class="close" onclick="closeModal('createModal', document.getElementsByClassName('menu-clicked')[0].id)">&times;</span>
+            <p style="font-size: 20px;">Adding a new to do task</p>
+            <input type="text" placeholder="Type your new task..." class="input-text" id="input-text"/> 
+            <select class="input-text" style="margin-top: 15px; width: 388px;" id="input-select">
+                <option value="" disabled selected>Choose a priority</option>
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+            </select>
+            <button class="btn-add" onclick="createTask()" style="width: 100%;">Add</button>
+        </div>
+      
+    </div>
+
+    <div id="editModal" class="modal">
+
+      <div class="modal-content">
+          <span class="close" onclick="closeModal('editModal')">&times;</span>
+          <p style="font-size: 20px;">Edit task</p>
+          <input type="text" class="input-text" id="input-text2"/> 
+          <select class="input-text" style="margin-top: 15px; width: 388px;" id="input-select2">
+              <option value="" disabled selected>Choose a priority</option>
+              <option value="high">High</option>
+              <option value="medium">Medium</option>
+              <option value="low">Low</option>
+          </select>
+          <button id="btn-edit" class="btn-add" style="width: 100%;">Save</button>
+      </div>
+    
+  </div>
+  </body>
+</html>
