@@ -4,7 +4,8 @@
   "description": "To do app",
   "main": "index.js",
   "scripts": {
-    "start": "electron . "
+    "start": "electron . ",
+    "build": "electron-builder"
   },
   "author": {
     "email": "victorjnio75@gmail.com",
@@ -12,6 +13,7 @@
   },
   "license": "ISC",
   "devDependencies": {
-    "electron": "^24.2.0"
+    "electron": "^24.2.0",
+    "electron-builder": "^23.6.0"
   }
 }
