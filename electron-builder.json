@@ -1,5 +1,5 @@
 {
-    "linux": {
-        "target": ["deb"]
+    "win": {
+        "target": ["nsis"]
     }
 }
