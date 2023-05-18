@@ -9,7 +9,7 @@ To get the app for your OS check the /dist folder
 To local run you can use:
 > npm install
 > 
-> npm run starttion
+> npm run start
 
 ## Features
 
