@@ -6,9 +6,12 @@ This is a simple multi-platform to do list app created with Electron using pure 
 
 To get the app for your OS check the /dist folder
 
-To local run you can use :
+To local run you can use:
 > npm install
+to install the dependencies
+
 > npm run start
+to start the application
 
 ## Features
 
