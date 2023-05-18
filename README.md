@@ -25,5 +25,5 @@ Your tasks can also count with a priority level: low, medium or high. This will 
 
 ### Completed tasks
 
-At complete your tasks, you can still track it on the "Completed" screen to see you evolution. You can also move a task back to your to do list in case of 
+At complete your tasks, you can still track it on the "Completed" screen to see your evolution. You can also move a task back to your to do list in case of 
 error or new demands.
