@@ -8,8 +8,8 @@
     "build": "electron-builder"
   },
   "author": {
-    "email": "victorjnio75@gmail.com",
-    "name": "Victor Alcantara"
+    "email": "",
+    "name": ""
   },
   "license": "ISC",
   "devDependencies": {
