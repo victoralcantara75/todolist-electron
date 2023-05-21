@@ -8,6 +8,12 @@ p{
     font-family: 'Roboto';
 }
 
+textarea{
+    width: 98%;
+    max-width: 98%;
+    min-width: 98%;
+}
+
 .flex-container{
     display: flex;
     flex-direction: row;
@@ -91,9 +97,11 @@ p{
 }
 
 .p-task{
+    height: 45px;
     line-height: 45px;
     margin-left: 5%;
     width: 65%;
+    overflow-x: auto;
 }
 .p-task-completed{
     color: gray;
@@ -196,4 +204,18 @@ svg{
     font-family: 'Roboto';
     font-size: 20px;
     border-radius: 6px;
+}
+
+.note{
+    width: 98.5%;
+    text-align: start;
+    margin-left: 5px;
+    background-color: rgb(235, 235, 235);
+    transition: 0.5s;
+    line-height: 40px;
+}
+
+.note:hover{
+    background-color: rgb(194, 194, 194);
+    transition: 0.5s;
 }
