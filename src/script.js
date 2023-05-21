@@ -327,3 +327,35 @@ function getCompletedTaskDiv(task){
     </div>
     `
 }
+
+function sort(mode){
+    
+    const ORDER_BY_DATE = 1
+    const ORDER_BY_PRIORITY = 2
+    const ORDER_BY_CREATION = 3
+
+    //sorts the tasks by the deadline, closest date first
+    if(mode == ORDER_BY_DATE) {
+        data.sort(function(a,b){
+            return new Date(a.deadline) - new Date(b.deadline);
+        });
+    }
+    //sorts the tasks by the priority, most urgent first
+    else if(mode == ORDER_BY_PRIORITY){
+        const low = data.filter(item => item.priority == "low")
+        const medium = data.filter(item => item.priority == "medium")
+        const high = data.filter(item => item.priority == "high")
+
+        data = high.concat(medium, low)
+    }
+    //sorts the tasks by the creation date, most recent first
+    else if(mode == ORDER_BY_CREATION){
+        data.sort(function(a,b){
+            return b.id - a.id;
+        });
+    }
+
+    
+    closeModal('filterModal')
+    loadTasks()
+}

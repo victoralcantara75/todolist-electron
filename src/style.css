@@ -45,8 +45,19 @@ textarea{
     text-decoration-thickness: 3px;
 }
 
+.filter-option{
+    line-height: 40px;
+    margin: 0;
+}
+
+.filter-option:hover{
+    background-color: rgb(235, 235, 235);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
 .add-task{
-    width: 100%;
+    width: 90%;
     height: 60px;
     text-align: center;
 }
@@ -123,6 +134,13 @@ textarea{
     width: 35%;
 }
 
+.filter-icon{
+    margin-top: 4%;
+    cursor: pointer;
+    height: 25px;
+    color: #405cf5;
+}
+
 .priority{
     width: 60px;
     height: 20px;
@@ -183,6 +201,14 @@ svg{
     border: 1px solid #888;
     width: 80%;
     text-align: center;
+}
+
+.filter-modal{
+    width: 22%;
+    padding: 0;
+    margin-left: 75%;
+    margin-top: 3%;
+    transition: 2s;
 }
 
 .close {
