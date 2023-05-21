@@ -19,6 +19,12 @@ You can create new tasks to remember or organize your personal or work jobs.
 If you missed something, you can edit your tasks or even delete it.
 All this functionalities are available on the main page.
 
+#### Notes
+Each task that you create has a possibility to add notes. With this notes your manage to give more information or context about that task.
+
+#### Deadline
+You can set a deadline date for the task, and on the information page if it's showing red... it's better to hurry up!!
+
 ### Priority
 
 Your tasks can also count with a priority level: low, medium or high. This will help you to look at the list and know easyly what you have to do first.
